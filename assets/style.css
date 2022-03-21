@@ -1,7 +1,8 @@
 @import url('./reset.css');
-@import url('./array.css');
-@import url('./form.css');
-@import url('./library.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./burger.css');
+
 * {
     box-sizing: border-box;
 }
@@ -79,12 +80,16 @@ main {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    max-height: 70px;
+    width: 100%;
     background-color: #0099cc;
     border: 1px solid black;
     color: #ffffff;
-    text-align: center;
+    /* text-align: center; */
     font-size: 0.8em;
-    padding: 15px;
+    padding: 5px;
 }
 
 @media screen and (max-width: 575px) {
@@ -92,3 +97,4 @@ footer {
       display: block;
     }
 }
+

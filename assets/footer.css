@@ -1,0 +1,31 @@
+.footer_container {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.footer_logo-maps img {
+    position: relative;
+    max-width: 100px;
+    margin-left: 78%;
+}
+
+.footer_logo-maps {
+    max-width: 100%;
+    position: relative;
+    right: 3%;
+}
+
+
+.footer_phone p {
+    position: absolute;
+    width: 100%;
+    bottom: 1.5rem;
+    font-size: larger;
+    left: 10%;
+
+}
+
+.footer_end {
+    text-align: center;
+}
