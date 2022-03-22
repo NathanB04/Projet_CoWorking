@@ -41,12 +41,11 @@ h2 {
     margin: 0 0 15px;
 }
 
-header {
-    border: 1px solid black;
+/* header {
     color: #ffffff;
     text-align: center;
     padding: 15px;
-}
+} */
 
 header nav ul {
     display: flex;
@@ -65,13 +64,20 @@ header nav ul li a {
     text-decoration: none;
     color: white;
 }
-
+ul, header {
+    top: 1rem;
+    position: absolute;
+    background-color: transparent;
+    left: 25%;
+    right: 25%;
+    gap: 4rem;
+}
 header nav ul li a:link {
     color: white;
 }
 
 header nav ul li a:visited {
-    color: gray;
+    color: rgb(255, 255, 255);
 }
 
 header nav ul li a:hover {
@@ -101,6 +107,8 @@ footer {
     /* text-align: center; */
     font-size: 0.8em;
     padding: 5px;
+
+    
 }
 
 @media screen and (max-width: 575px) {
@@ -108,5 +116,6 @@ footer {
       display: block;
     }
 }
+
 
 
