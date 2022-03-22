@@ -3,6 +3,8 @@
 @import url('./header.css');
 @import url('./burger.css');
 @import url('./etablissement.css');
+@import url('./homepage.css');
+
 
 * {
     box-sizing: border-box;
@@ -85,7 +87,7 @@ header nav ul li a:active {
 main {
     border-left: 1px solid black;
     border-right: 1px solid black;
-    padding: 20px;
+    padding: 0px;
 }
 
 footer {
@@ -106,4 +108,5 @@ footer {
       display: block;
     }
 }
+
 

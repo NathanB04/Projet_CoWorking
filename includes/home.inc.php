@@ -1,2 +1,3 @@
-<h1>Bienvenue sur Coffice</h1>
 <?php
+include 'home.php';
+include 'nav.php';
