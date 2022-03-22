@@ -1,3 +1,6 @@
 includes/pageEtablissement.php
 includes/pageEtablissement.php
 includes/pageEtablissement.inc.php
+.DS_Store
+.gitignore
+js/.DS_Store
