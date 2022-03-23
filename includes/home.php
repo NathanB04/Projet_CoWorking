@@ -1,4 +1,5 @@
 <header>
+    <div class="navigation-desktop">
 <nav role="navigation">
         <ul>
             <li><a href="index.php?page=home">Home</a></li>
@@ -7,12 +8,30 @@
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
+    </div>
+    <div class="navigation-mobile">
+    <div class="logoHome">
+    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+</div>
+    <nav>
+            <div class="burger-button">
+                <span class="burger-top"></span>
+                <span class="burger-middle"></span>
+                <span class="burger-bottom"></span>
+            </div>
+            <div class="burger-menu">
+                <a href="http://cafe-wifi.fr">Accueil</a>
+                <a href="">Se connecter</a>
+                <a href="">Ajout d'un établissement</a>
+            </div>
+ </nav>
+ </div>
 </header>
 
 <div class="container">
     <div class="homepage">
         <img src="assets/img/coffice_homepage.jpeg">
-    </div>
+    </div> 
     <div class="homepageMobile">
         <img src="assets/img/ResponsiveHome.jpeg">
     </div>
@@ -35,5 +54,6 @@
         <img src="assets/img/twitter-icon.png"> 
      </div>
     <script src="js/maps.js"></script>
+    <script src="js/burger.js"></script>
 
 </div>
