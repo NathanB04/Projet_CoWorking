@@ -13,6 +13,9 @@
     <div class="homepage">
         <img src="assets/img/coffice_homepage.jpeg">
     </div>
+    <div class="homepageMobile">
+        <img src="assets/img/ResponsiveHome.jpeg">
+    </div>
     <div class="search-bar">
      <form action="/action_page.php">
          <label for="lieu">Choisissez un établissement :</label>
