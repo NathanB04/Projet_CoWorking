@@ -1,6 +1,7 @@
 <div class="logoHome">
     <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
 </div>
+
 <header>
     <div class="navigation-desktop">
 <nav role="navigation">
@@ -32,11 +33,14 @@
 
 <div class="container">
     <div class="homepage">
-        <img src="assets/img/coffice_homepage.jpeg">
+        <img src="assets/img/homepage_desktop.png">
     </div> 
     <div class="homepageMobile">
         <img src="assets/img/ResponsiveHome.jpeg">
     </div>
+    <div class="Logo_concept">
+    <img src="./assets/img/coffice_concept.png">
+</div>
     <div class="search-bar">
      <form action="/action_page.php">
          <label for="lieu">Choisissez un établissement :</label>
@@ -46,7 +50,7 @@
                 <option value="restaurant">Restaurant</option>
             </select>
             <input id="searchTextField" type="text" size="30" placeholder="Indiquez un lieu"> <br>
-        <input type="submit" style="width: 8rem; height: 30px; background-color: #0099cc; 
+        <input type="submit" style="width: 8rem; height: 30px; background-color: #d66b24; 
         border-radius: 30px; color:white; font-weight:600; text-align:center">
     </form>
     </div>
@@ -55,9 +59,9 @@
         <img src="assets/img/Instagram-Icon.png">
         <img src="assets/img/twitter-icon.png"> 
      </div>
-     <div class="logoHome">
-    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
-</div>
+     <!-- <div class="logoHome2">
+    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice" style="width: 60px; top: 0; left: 10px"> 
+</div> -->
     <script src="js/maps.js"></script>
     <script src="js/burger.js"></script>
 
