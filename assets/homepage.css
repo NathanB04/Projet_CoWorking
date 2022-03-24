@@ -55,6 +55,13 @@ body {
 
 }
 
+.logoHome img {
+
+    position: absolute;
+    top: 20px;
+    width: 60px;
+    left: 10%;
+}
 
 
 
@@ -111,7 +118,7 @@ body {
 
     .homepageMobile img {
         width: 100%;
-        background-size: cover;
+        /* background-size: cover; */
         top: 0;
         height: 100vh;
     }
@@ -134,17 +141,20 @@ body {
         margin-top: auto;
         margin-bottom: auto;
     }
+    .logoHome {
+        top: 0;
+        left: 10%;
+        position: absolute;
+    }
 
-    .navigation-mobile {
-        position: absolute;
-    }
-    
-    .logoHome  {
-        position: absolute;
-    }
+
     .logoHome img {
+
         width: 60px;
+        left: 10%;
     }
+
+   
 }
 
     

@@ -1,3 +1,6 @@
+<div class="logoHome">
+    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+</div>
 <header>
     <div class="navigation-desktop">
 <nav role="navigation">
@@ -9,10 +12,9 @@
         </ul>
     </nav>
     </div>
+   
     <div class="navigation-mobile">
-        <div class="logoHome">
-    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
-</div>
+        
     <nav>
             <div class="burger-button">
                 <span class="burger-top"></span>
@@ -53,6 +55,9 @@
         <img src="assets/img/Instagram-Icon.png">
         <img src="assets/img/twitter-icon.png"> 
      </div>
+     <div class="logoHome">
+    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+</div>
     <script src="js/maps.js"></script>
     <script src="js/burger.js"></script>
 
