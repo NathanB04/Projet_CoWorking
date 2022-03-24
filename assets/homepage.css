@@ -111,7 +111,12 @@ body {
     .navigation-desktop {
         display: non;
     }
-   
+
+    .search-bar {
+        top: 40%;
+        
+    }
+    
     .icons {
         margin: auto;
     }
@@ -143,11 +148,14 @@ body {
         display: none;
     }
     .Logo_concept {
-        top: 20%;
+        top: 10%;
         margin-left: 6%;
         position: absolute;
     }
 
+    .search-bar {
+        top: 40%;
+    }
 }
 
 /************************* width <= 500 px *****************************/
