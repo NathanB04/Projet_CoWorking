@@ -89,9 +89,40 @@ body {
     .homepage img {
         display: none;
     }
+
+    .homepageMobile img {
+        width: 100%;
+        /* background-size: cover; */
+        top: 0;
+        height: 100vh;
+    }
+
     .navigation-desktop {
         display: non;
     }
+    .logoHome {
+        top: 0;
+        left: 2rem;
+        position: absolute;
+    }
+
+
+    .logoHome img {
+
+        width: 60px;
+    }
+    .icons {
+        margin: auto;
+    }
+    
+    input {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
 }
 
 /************************* width <= 768 px *****************************/
@@ -100,7 +131,17 @@ body {
     .homepage img {
         display: none;
     }
+    .logoHome {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
 
+
+    .logoHome img {
+
+        width: 60px;
+    }
     
 }
 
@@ -150,6 +191,7 @@ body {
 
     .logoHome img {
 
+        top: 10px;
         width: 60px;
         left: 10%;
     }
