@@ -78,8 +78,19 @@ body {
         display: none;
     }
 
-    .logo {
+    
+    .logoHome {
         display: none;
+    }
+    .Logo_concept {
+        top: 10%;
+        margin-left: 30%;
+        width: 40%;
+        position: absolute;
+    }
+
+    .Logo_concept img {
+        width: 100%;
     }
 }
 
@@ -100,17 +111,7 @@ body {
     .navigation-desktop {
         display: non;
     }
-    .logoHome {
-        top: 0;
-        left: 2rem;
-        position: absolute;
-    }
-
-
-    .logoHome img {
-
-        width: 60px;
-    }
+   
     .icons {
         margin: auto;
     }
@@ -122,7 +123,14 @@ body {
         margin-top: auto;
         margin-bottom: auto;
     }
-    
+    .logoHome {
+        display: none;
+    }
+    .Logo_concept {
+        top: 10%;
+        margin-left: 6%;
+        position: absolute;
+    }
 }
 
 /************************* width <= 768 px *****************************/
@@ -132,17 +140,14 @@ body {
         display: none;
     }
     .logoHome {
-        top: 0;
-        left: 0;
+        display: none;
+    }
+    .Logo_concept {
+        top: 20%;
+        margin-left: 6%;
         position: absolute;
     }
 
-
-    .logoHome img {
-
-        width: 60px;
-    }
-    
 }
 
 /************************* width <= 500 px *****************************/
@@ -159,7 +164,6 @@ body {
 
     .homepageMobile img {
         width: 100%;
-        /* background-size: cover; */
         top: 0;
         height: 100vh;
     }
@@ -182,16 +186,20 @@ body {
         margin-top: auto;
         margin-bottom: auto;
     }
+
     .logoHome {
-        top: 0;
-        left: 8%;
-        position: absolute;
+        display: none;
     }
 
-    .logoHome img {
-
-        top: 10px;
-        width: 60px;
+    .Logo_concept {
+        top: 20%;
+        margin-left: 6%;
+        position: absolute;
+    }
+    .Logo_concept img 
+    {
+        
+        width: 85%;
     }
 
    
