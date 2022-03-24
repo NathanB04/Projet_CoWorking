@@ -184,16 +184,14 @@ body {
     }
     .logoHome {
         top: 0;
-        left: 10%;
+        left: 8%;
         position: absolute;
     }
-
 
     .logoHome img {
 
         top: 10px;
         width: 60px;
-        left: 10%;
     }
 
    
