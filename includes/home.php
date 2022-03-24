@@ -10,7 +10,7 @@
     </nav>
     </div>
     <div class="navigation-mobile">
-    <div class="logoHome">
+        <div class="logoHome">
     <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
 </div>
     <nav>
@@ -43,9 +43,9 @@
                 <option value="cafe">Café</option>
                 <option value="restaurant">Restaurant</option>
             </select>
-            <input id="searchTextField" type="text" size="30" placeholder="Indiquez un lieu">
+            <input id="searchTextField" type="text" size="30" placeholder="Indiquez un lieu"> <br>
         <input type="submit" style="width: 8rem; height: 30px; background-color: #0099cc; 
-        border-radius: 30px; color:white; font-weight:600">
+        border-radius: 30px; color:white; font-weight:600; text-align:center">
     </form>
     </div>
      <div class="icons"> 
