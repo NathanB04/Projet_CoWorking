@@ -43,12 +43,6 @@ h2 {
     margin: 0 0 15px;
 }
 
-/* header {
-    color: #ffffff;
-    text-align: center;
-    padding: 15px;
-} */
-
 header nav ul {
     display: flex;
     flex-direction : row;
@@ -92,32 +86,10 @@ header nav ul li a:active {
     background-color: #0099cc;
 }
 
-main {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 0px;
-}
 
-footer {
-    position: fixed;
-    bottom: 0;
-    max-height: 70px;
-    width: 100%;
-    background-color: #0099cc;
-    border: 1px solid black;
-    color: #ffffff;
-    /* text-align: center; */
-    font-size: 0.8em;
-    padding: 5px;
-
-    
-}
 
 @media screen and (max-width: 575px) {
     #main {
       display: block;
     }
 }
-
-
-

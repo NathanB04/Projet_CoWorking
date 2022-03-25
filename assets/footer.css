@@ -29,3 +29,16 @@
 .footer_end {
     text-align: center;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    max-height: 70px;
+    width: 100%;
+    background-color: #0099cc;
+    border: 1px solid black;
+    color: #ffffff;
+    /* text-align: center; */
+    font-size: 0.8em;
+    padding: 5px;   
+}
