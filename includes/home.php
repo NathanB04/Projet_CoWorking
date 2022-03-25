@@ -4,7 +4,7 @@
 
 <header>
     <div class="navigation-desktop">
-<nav role="navigation">
+    <nav role="navigation">
         <ul>
             <li><a href="index.php?page=home">Home</a></li>
             <li><a href="">Connexion</a></li>
@@ -15,7 +15,6 @@
     </div>
    
     <div class="navigation-mobile">
-        
     <nav>
             <div class="burger-button">
                 <span class="burger-top"></span>
@@ -27,10 +26,10 @@
                 <a href="">Se connecter</a>
                 <a href="">Ajout d'un établissement</a>
             </div>
- </nav>
- </div>
+    </nav>
+    </div>
 </header>
-
+<main>
 <div class="container">
     <div class="homepage">
         <img src="assets/img/homepage_desktop.png">
@@ -41,28 +40,24 @@
     <div class="Logo_concept">
     <img src="./assets/img/coffice_concept.png">
 </div>
-    <div class="search-bar">
-     <form action="/action_page.php">
-         <label for="lieu">Choisissez un établissement :</label>
+        <div class="search-bar">
+             <form action="/action_page.php">
+                 <label for="lieu">Choisissez un établissement :</label>
          <br>
-             <select id="lieu" name="lieu">
-                <option value="cafe">Café</option>
-                <option value="restaurant">Restaurant</option>
-            </select>
+                 <select id="lieu" name="lieu">
+                    <option value="cafe">Café</option>
+                     <option value="restaurant">Restaurant</option>
+                </select>
             <input id="searchTextField" type="text" size="30" placeholder="Indiquez un lieu"> <br>
-        <input type="submit" style="width: 8rem; height: 30px; background-color: #d66b24; 
+            <input type="submit" style="width: 8rem; height: 30px; background-color: #d66b24; 
         border-radius: 30px; color:white; font-weight:600; text-align:center">
-    </form>
+            </form>
     </div>
+    </main>
      <div class="icons"> 
         <img src="assets/img/icons-facebook.png">
         <img src="assets/img/Instagram-Icon.png">
         <img src="assets/img/twitter-icon.png"> 
      </div>
-     <!-- <div class="logoHome2">
-    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice" style="width: 60px; top: 0; left: 10px"> 
-</div> -->
     <script src="js/maps.js"></script>
     <script src="js/burger.js"></script>
-
-</div>
