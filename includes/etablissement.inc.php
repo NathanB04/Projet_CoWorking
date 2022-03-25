@@ -3,4 +3,3 @@
 <?php
 
 include 'etablissement.php';
-include 'nav.php';

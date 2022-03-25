@@ -22,7 +22,7 @@
                 <span class="burger-bottom"></span>
             </div>
             <div class="burger-menu">
-                <a href="http://cafe-wifi.fr">Accueil</a>
+                <a href="http://localhost:8888/Projet_CoWorking/index.php?page=home">Accueil</a>
                 <a href="">Se connecter</a>
                 <a href="">Ajout d'un établissement</a>
             </div>
