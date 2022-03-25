@@ -65,3 +65,5 @@ hooks/post-update.sample
 hooks/index.php
 hooks/fsmonitor-watchman.sample
 hooks/applypatch-msg.sample
+includes/nav.php
+includes/footer.php
