@@ -3,6 +3,7 @@
 </div>
 
 <header>
+
     <div class="navigation-desktop">
     <nav role="navigation">
         <ul>
@@ -28,8 +29,11 @@
             </div>
     </nav>
     </div>
+
 </header>
+
 <main>
+
 <div class="container">
     <div class="homepage">
         <img src="assets/img/homepage_desktop.png">
@@ -41,19 +45,22 @@
     <img src="./assets/img/coffice_concept.png">
 </div>
         <div class="search-bar">
+
              <form action="/action_page.php">
                  <label for="lieu">Choisissez un établissement :</label>
          <br>
                  <select id="lieu" name="lieu">
                     <option value="cafe">Café</option>
-                     <option value="restaurant">Restaurant</option>
+                    <option value="restaurant">Restaurant</option>
                 </select>
             <input id="searchTextField" type="text" size="30" placeholder="Indiquez un lieu"> <br>
             <input type="submit" style="width: 8rem; height: 30px; background-color: #d66b24; 
-        border-radius: 30px; color:white; font-weight:600; text-align:center">
+            border-radius: 30px; color:white; font-weight:600; text-align:center">
             </form>
-    </div>
-    </main>
+         </div>
+
+ </main>
+
      <div class="icons"> 
         <img src="assets/img/icons-facebook.png">
         <img src="assets/img/Instagram-Icon.png">
