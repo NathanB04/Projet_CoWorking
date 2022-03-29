@@ -1,6 +1,8 @@
 <!-- nous sommes sur la page de l'etablissement -->
 <div class="logo">
-    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+    <a href="http://localhost/Projet_CoWorking/">
+        <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+    </a>
 </div>
 
 <nav>

@@ -1,6 +1,8 @@
 <!-- nous sommes sur la page des résultats -->
 <div class="logo">
+    <a href="http://localhost/Projet_CoWorking/">
         <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+    </a>
 </div>
 
 <body class="resultatsPage">
