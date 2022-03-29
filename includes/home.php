@@ -23,10 +23,10 @@
                 <span class="burger-bottom"></span>
             </div>
             <div class="burger-menu">
-                <a href="http://localhost:8888/Projet_CoWorking/index.php?page=home">Accueil</a>
+                <a href="">Accueil</a>
                 <a href="">Se connecter</a>
                 <a href="">Ajout d'un établissement</a>
-                <a href="http://localhost:8888/Projet_CoWorking/index.php?page=pageResultats">Liste des établissements</a>
+                <a href="">Liste des établissements</a>
             </div>
     </nav>
     </div>
@@ -54,7 +54,7 @@
                     <option value="cafe">Café</option>
                     <option value="restaurant">Restaurant</option>
                 </select>
-            <input id="searchTextField" type="text" size="30" placeholder="Indiquez un lieu"> <br>
+            <input id="searchTextField" type="text" name="city" size="30" placeholder="Indiquez un lieu"/> <br>
             <input type="submit" style="width: 8rem; height: 30px; background-color: #d66b24; 
             border-radius: 30px; color:white; font-weight:600; text-align:center">
             </form>
