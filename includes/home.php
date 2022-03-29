@@ -26,6 +26,7 @@
                 <a href="http://localhost:8888/Projet_CoWorking/index.php?page=home">Accueil</a>
                 <a href="">Se connecter</a>
                 <a href="">Ajout d'un établissement</a>
+                <a href="http://localhost:8888/Projet_CoWorking/index.php?page=pageResultats">Liste des établissements</a>
             </div>
     </nav>
     </div>
