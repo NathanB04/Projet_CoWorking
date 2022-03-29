@@ -38,7 +38,7 @@
                 </select>
         </div>
         <div class="adresse-etablissement-page">
-            <p><b>Adresse</b> : 12 Rue Traversière, 27140, Gisors.</p>
+            <p><b>Adresse</b> : Lorem, ipsum dolor, 27140, Gisors.</p>
         </div>
         <div class="description-etablissement-page">
             <p><b>Description de l'établissement</b> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum beatae consequuntur, 
