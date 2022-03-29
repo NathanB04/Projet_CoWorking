@@ -1,8 +1,14 @@
+.body_etablissement {
+    background-color: #323333;
+    color: white;
+}
+
 .title-etablissement-page h1{
     display: flex;
     margin-top: 25%;
     text-align: center;
     justify-content: center;
+    color: #D66B24;
 }
 
 .img-etablissement-page img {
@@ -34,7 +40,7 @@
 
 .description-etablissement-page {
     margin-top: 7%;
-    color: rgb(90, 88, 88);
+    color: white;
 }
 
 .avis-clients-etablissement-page {
