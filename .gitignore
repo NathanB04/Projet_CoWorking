@@ -67,3 +67,5 @@ hooks/fsmonitor-watchman.sample
 hooks/applypatch-msg.sample
 includes/nav.php
 includes/footer.php
+includes/pageResultats.php
+includes/pageResultats.inc.php

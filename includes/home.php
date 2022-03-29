@@ -1,5 +1,5 @@
 <div class="logoHome">
-    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+    <img src="./assets/img/coffice_logo_blanc.png" alt="logo Coffice"> 
 </div>
 
 <header>
@@ -23,10 +23,10 @@
                 <span class="burger-bottom"></span>
             </div>
             <div class="burger-menu">
-                <a href="">Accueil</a>
+                <a href="http://cafe-wifi.fr">Accueil</a>
                 <a href="">Se connecter</a>
-                <a href="">Ajout d'un établissement</a>
-                <a href="">Liste des établissements</a>
+                <a href="http://cafe-wifi.fr/index.php?page=etablissement">Ajout d'un établissement</a>
+                <a href="http://cafe-wifi.fr/index.php?page=resultats">Liste des établissements</a>
             </div>
     </nav>
     </div>
