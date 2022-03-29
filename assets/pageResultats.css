@@ -116,3 +116,13 @@
 
 	
 }
+
+@media screen and (min-width : 993px) {
+	.burger-button {
+		display: none;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+}
