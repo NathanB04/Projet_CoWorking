@@ -78,7 +78,8 @@ header nav ul li a:visited {
 
 header nav ul li a:hover {
     color: white;
-    background-color: #0099cc;
+    background-color: #D66B24;
+    border-radius: 5px;
 }
 
 header nav ul li a:active {
