@@ -35,18 +35,6 @@
 	margin: 0;
 }
 
-.container .product-details h1:before{
-	position: absolute;
-	right: 0%; 
-	top: 0%;
-	font-family: 'Bree Serif', serif;
-	display: inline-block;
-	border-radius: 5px;
-	font-size: 14px;
-	padding: 5px;
-	color: white;
-}
-
 .container .product-details > p {
 	font-family: 'EB Garamond', serif;
 	text-align: center;
