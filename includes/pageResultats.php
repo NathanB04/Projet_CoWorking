@@ -5,16 +5,18 @@
 
 <body class="resultatsPage">
 
-<div class="navigation-desktop">
-    <nav role="navigation">
-        <ul>
-            <li><a href="index.php?page=home">Home</a></li>
-            <li><a href="">Connexion</a></li>
-            <li><a href="index.php?page=etablissement">Etablissement</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
-</div>
+<header>
+    <div class="navigation-desktop">
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.php?page=home">Home</a></li>
+                <li><a href="">Connexion</a></li>
+                <li><a href="index.php?page=etablissement">Etablissement</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <nav>
     <div class="burger-button">
