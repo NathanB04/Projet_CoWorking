@@ -45,7 +45,6 @@
 	font-size: 14px;
 	padding: 5px;
 	color: white;
-	margin: 0;
 }
 
 .container .product-details > p {
@@ -66,15 +65,11 @@
     position: relative;
     overflow: hidden;
 	cursor: pointer;
-	outline: none;
-	border: none;
 	background: #D66B24;
 	color: #eee;
-	padding: 0;
-	margin: 0;
 	margin-left: 100px;
 	margin-bottom: -12px;
-	border: 0;
+	border: none;
 	font-weight: bolder;
 }
 
