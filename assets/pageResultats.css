@@ -54,12 +54,13 @@
 	font-size: 18px;
 	color: #7d7d7d;
 	margin-top: 25px;
+	width: 100%;
 }
 
 .control{
 	position: absolute;
-	bottom: 20%;
 	left: 22.8%;
+	margin-top: 5%;
 }
 .btn {
 	border-radius: 5px;
@@ -93,19 +94,6 @@
 	width: 45%;
 }
 
-.info {
-    background: rgba(27, 26, 26, 0.9);
-    font-family: 'Bree Serif', serif;
-    position: absolute;
-    text-align: left;
-    font-size: 105%;
-    color: #FFF;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
 
 @media screen and (max-width : 500px) {
 	.container {
@@ -120,14 +108,25 @@
 		width: 300px;
 		display: flex;
 		margin: 13%;
+		/* top: 30%; */
+		padding-top: 40%;
 	}
 
 	.product-details {
 		overflow: visible;
+		width: 100%;
 	}
 
 	.btn {
-		margin-left: 10px;
+		margin-left: auto;
+		margin-right: auto;
 		width: 260px;
 	}
-}
+	
+	.control {
+		left: 10%;
+	}
+
+	.container .product-details h1 {
+		margin-left: 20%;
+	}
