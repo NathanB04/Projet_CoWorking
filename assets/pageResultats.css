@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+.resultatsPage {
+	background-color: #323333;
+}
+
+.container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 10em auto;
+	margin-bottom: 2rem;
+	height: 350px;
+	width: 700px;	
+}
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: visible;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+}
+
+.container .product-details h1{
+	font-family: 'Bebas Neue', cursive;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+}
+
+.container .product-details h1:before{
+	position: absolute;
+	right: 0%; 
+	top: 0%;
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+}
+
+.container .product-details > p {
+	font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	margin-top: 25px;
+}
+
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+}
+.btn {
+	border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background: #D66B24;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	margin-left: 100px;
+	margin-bottom: -12px;
+	border: 0;
+	font-weight: bolder;
+}
+
+.btn span {
+    font-family: 'Bree Serif', serif;
+	display: inline-block;
+    padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+}
+
+.product-image {
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	width: 45%;
+}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    position: absolute;
+    text-align: left;
+    font-size: 105%;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+@media screen and (max-width : 500px) {
+	.container {
+		height: auto;
+		width: 90%;
+	}
+	.product-image {
+		display: block;
+	}
+
+	.product-image img {
+		width: 300px;
+		display: flex;
+		margin: 13%;
+	}
+
+	.product-details {
+		overflow: visible;
+	}
+
+	.btn {
+		margin-left: 10px;
+		width: 260px;
+	}
+}
