@@ -93,19 +93,6 @@
 	width: 45%;
 }
 
-.info {
-    background: rgba(27, 26, 26, 0.9);
-    font-family: 'Bree Serif', serif;
-    position: absolute;
-    text-align: left;
-    font-size: 105%;
-    color: #FFF;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-}
-
 
 @media screen and (max-width : 500px) {
 	.container {
@@ -130,4 +117,9 @@
 		margin-left: 10px;
 		width: 260px;
 	}
+
+	.information {
+		display: flex;
+	}
+	
 }
