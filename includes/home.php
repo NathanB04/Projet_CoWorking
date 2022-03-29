@@ -1,5 +1,5 @@
 <div class="logoHome">
-    <img src="./assets/img/Coffice_Logo.png" alt="logo Coffice"> 
+    <img src="./assets/img/coffice_logo_blanc.png" alt="logo Coffice"> 
 </div>
 
 <header>
