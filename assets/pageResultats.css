@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 .resultatsPage {
 	background-color: #323333;
 }
@@ -36,7 +36,7 @@
 }
 
 .container .product-details > p {
-	font-family: 'EB Garamond', serif;
+	font-family: 'Roboto condensed', serif;
 	text-align: center;
 	font-size: 18px;
 	color: #7d7d7d;
@@ -91,7 +91,6 @@
 		width: 300px;
 		display: flex;
 		margin: 13%;
-		/* top: 30%; */
 		padding-top: 40%;
 	}
 
