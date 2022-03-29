@@ -34,7 +34,7 @@
 
 <main>
 
-<div class="container">
+<div class="container_home">
     <div class="homepage">
         <img src="assets/img/homepage_desktop.png">
     </div> 
