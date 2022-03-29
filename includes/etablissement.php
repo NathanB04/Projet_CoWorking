@@ -19,7 +19,7 @@
 
 
 
-<body>
+<body class="body_etablissement">
     <div class="body_container">
         <div class="title-etablissement-page">
             <h1>Nom de l'établissement</h1>
@@ -28,7 +28,7 @@
             <img src="./assets/img/cafe_coworking.jpg" alt="Image du café">
         </div>
         <div class="select-horaire-etablissement-page">
-            <label for="day-select"><b>Choisissez un jour :</b></label>
+            <label for="day-select"><b><o>Choisissez un jour :</o></b></label>
                 <select name="horaire" id="horaire">
                     <option value="lundi">Lundi 9H-17H</option>
                     <option value="mardi">Mardi 9H-17H</option>
@@ -38,15 +38,15 @@
                 </select>
         </div>
         <div class="adresse-etablissement-page">
-            <p><b>Adresse</b> : Lorem, ipsum dolor, 27140, Gisors.</p>
+            <p><b><o>Adresse</o></b> : Lorem, ipsum dolor, 27140, Gisors.</p>
         </div>
         <div class="description-etablissement-page">
-            <p><b>Description de l'établissement</b> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum beatae consequuntur, 
+            <p><b><o>Description de l'établissement</o></b> : Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus earum beatae consequuntur, 
                 excepturi voluptate debitis ab nulla fugiat nemo magni?
             </p>
         </div>
         <div class="avis-clients-etablissement-page">
-            <p><b>Avis des clients</b> : </p>
+            <p><b><o>Avis des clients</o></b> : </p>
             <p class="p-avis-clients">Roger : "<i>Lieu de dégustation d'excellents cafés sous toutes les déclinaisons, dans un lieu aménagé avec goût.
                 Accueil chaleureux, souriant. On peut y acheter son arabica à emporter à la maison et des équipements
                  pour faire son café. Y aller entre amis pour une pause café, y aller seul et travailler sur son labtop...

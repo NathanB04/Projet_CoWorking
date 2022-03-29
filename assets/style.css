@@ -33,6 +33,10 @@ b {
     font-weight: bold;
 }
 
+o {
+    color: #D66B24;
+}
+
 h1 {
     font-size: 2em;
     margin: 0 0 20px;
@@ -78,7 +82,8 @@ header nav ul li a:visited {
 
 header nav ul li a:hover {
     color: white;
-    background-color: #0099cc;
+    background-color: #D66B24;
+    border-radius: 5px;
 }
 
 header nav ul li a:active {
