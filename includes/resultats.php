@@ -40,7 +40,7 @@
             Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
-                <span class="moreInfo">Plus d'info</span>
+                <span class="moreInfo"><g>Plus d'info</g></span>
             </button>
         </div>
     </div>
@@ -56,7 +56,7 @@
             Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
-                <span class="moreInfo">Plus d'info</span>
+                <span class="moreInfo"><g>Plus d'info</g></span>
             </button>
         </div>
     </div>
@@ -72,7 +72,7 @@
             Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
-                <span class="moreInfo">Plus d'info</span>
+                <span class="moreInfo"><g>Plus d'info</g></span>
             </button>
         </div>
     </div>
@@ -88,7 +88,7 @@
             Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
-                <span class="moreInfo">Plus d'info</span>
+                <span class="moreInfo"><g>Plus d'info</g></span>
             </button>
         </div>
     </div>
