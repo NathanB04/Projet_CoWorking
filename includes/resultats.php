@@ -36,8 +36,8 @@
 <div class="container">
     <div class="product-details">
         <h1>Australian café</h1>
-        <p class="information"><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</p>
+        <p class="information"><g><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
                 <span class="moreInfo">Plus d'info</span>
@@ -52,8 +52,8 @@
 <div class="container">
     <div class="product-details">
         <h1>Australian café</h1>
-        <p class="information"><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</p>
+        <p class="information"><g><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
                 <span class="moreInfo">Plus d'info</span>
@@ -68,8 +68,8 @@
 <div class="container">
     <div class="product-details">
         <h1>Australian café</h1>
-        <p class="information"><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</p>
+        <p class="information"><g><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
                 <span class="moreInfo">Plus d'info</span>
@@ -84,8 +84,8 @@
 <div class="container">
     <div class="product-details">
         <h1>Australian café</h1>
-        <p class="information"><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</p>
+        <p class="information"><g><b>Description brève:</b> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Cupiditate, atque molestiae velit nesciunt laborum odit eligendi minus ratione totam doloremque.</g></p>
         <div class="control">
             <button class="btn">
                 <span class="moreInfo">Plus d'info</span>
