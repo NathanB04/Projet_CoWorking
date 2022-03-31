@@ -12,9 +12,9 @@
         <nav role="navigation">
             <ul>
                 <li><a href="index.php?page=home">Home</a></li>
-                <li><a href="">Connexion</a></li>
+                <li><a href="http://localhost/projet_coworking/index.php?page=login">Connexion</a></li>
                 <li><a href="index.php?page=etablissement">Etablissement</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="http://localhost/projet_coworking/index.php?page=contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -28,7 +28,7 @@
     </div>
     <div class="burger-menu">
         <a href="http://cafe-wifi.fr">Accueil</a>
-        <a href="">Se connecter</a>
+        <a href="http://localhost/projet_coworking/index.php?page=login">Se connecter</a>
         <a href="">Ajout d'un établissement</a>
     </div>
  </nav>
