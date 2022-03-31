@@ -11,3 +11,13 @@
     justify-content: center;
     margin-top: 5%;
 }
+
+@media screen and (min-width : 993px) {
+    .email {
+        margin-top: 15%;
+    }
+
+    .phone {
+        margin-top: 2%;
+    }
+}
