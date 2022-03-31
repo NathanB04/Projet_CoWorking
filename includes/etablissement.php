@@ -60,7 +60,7 @@
     </div>
     <div class="avis-clients-etablissement-page">
         <p><b><o>Avis des clients</o></b> : </p>
-        <p class="p-avis-clients">Roger : "<i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis qui autem, quam est tempora deserunt voluptatem quos sapiente consectetur eum dolore animi? Explicabo perspiciatis atque dolores incidunt? Repudiandae, vero. Nisi.</i>"
+        <p class="p-avis-clients"><b>Roger : </b>"<i>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis qui autem, quam est tempora deserunt voluptatem quos sapiente consectetur eum dolore animi? Explicabo perspiciatis atque dolores incidunt? Repudiandae, vero. Nisi.</i>"
         </p>
         <p class="etoiles-moyenne-client-avis">★ ★ ★ ☆ ☆</p>
     </div>

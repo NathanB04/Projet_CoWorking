@@ -12,9 +12,9 @@
         <nav role="navigation">
             <ul>
                 <li><a href="index.php?page=home">Home</a></li>
-                <li><a href="">Connexion</a></li>
+                <li><a href="#">Connexion</a></li>
                 <li><a href="index.php?page=etablissement">Etablissement</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -28,8 +28,8 @@
     </div>
     <div class="burger-menu">
         <a href="http://localhost:8888/Projet_CoWorking/index.php?page=home">Accueil</a>
-        <a href="">Se connecter</a>
-        <a href="">Ajout d'un établissement</a>
+        <a href="#">Se connecter</a>
+        <a href="#">Ajout d'un établissement</a>
     </div>
 </nav>
 
