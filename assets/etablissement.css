@@ -55,3 +55,57 @@
 .etoiles-moyenne-client-avis {
     margin-top: 4%;
 }
+
+@media screen and (min-width : 993px) {
+    .burger-button {
+		display: none;
+	}
+
+	.burger-menu {
+		display: none;
+	}
+
+    .title-etablissement-page h1{
+        margin-top: 150px;
+    }
+
+    .img-etablissement-page img {
+        margin-top: 50px;
+        height: 300px;
+        width: 400px;
+        margin-left: 75px;
+    }
+
+    .select-horaire-etablissement-page {
+        margin-top: -18%;
+        margin-left: 35%;
+    }
+
+    .adresse-etablissement-page {
+        margin-right: 11%;
+        margin-top: 3%;
+    }
+
+    .description-etablissement-page {
+        margin-left: 35%;
+        padding-right: 45%;
+        margin-top: 3%;
+    }
+
+    .avis-clients-etablissement-page {
+        margin-left: 55%;
+        margin-top: -12%;
+    }
+
+    .p-avis-clients {
+        padding-left: 10%;
+    }
+
+    .footer_phone p{
+        margin-left: 10%;
+    }
+
+    .footer_logo-maps {
+        margin-left: 30%;
+    }
+}
