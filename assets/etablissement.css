@@ -17,7 +17,7 @@
     margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 0px 19px 5px #000000;
+    box-shadow: 0 15px 30px 1px grey;
 }
 
 .body_container h2{
@@ -41,6 +41,9 @@
 .description-etablissement-page {
     margin-top: 7%;
     color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .avis-clients-etablissement-page {
@@ -50,6 +53,9 @@
 
 .p-avis-clients {
     margin-top: 5%;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .etoiles-moyenne-client-avis {
@@ -90,6 +96,7 @@
         margin-left: 35%;
         padding-right: 45%;
         margin-top: 3%;
+        padding-left: 0;
     }
 
     .avis-clients-etablissement-page {
