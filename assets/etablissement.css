@@ -9,6 +9,8 @@
     text-align: center;
     justify-content: center;
     color: #D66B24;
+    font-size: xx-large;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 
 .img-etablissement-page img {
@@ -114,5 +116,31 @@
 
     .footer_logo-maps {
         margin-left: 30%;
+    }
+}
+
+@media screen and (min-width : 767px) {
+
+    .title-etablissement-page h1{
+    margin-top: 15%;
+    }
+
+    .img-etablissement-page img{
+    margin-top: 10%;
+    }
+
+    .select-horaire-etablissement-page, .adresse-etablissement-page, .description-etablissement-page, .avis-clients-etablissement-page {
+    margin-top: 4%;
+    }
+    .p-avis-clients{
+    margin-top: 2%;
+    }
+
+    .select-horaire-etablissement-page{
+    text-align: center;
+    }
+
+    .description-etablissement-page{
+        display: flex;
     }
 }
