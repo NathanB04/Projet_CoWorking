@@ -11,10 +11,10 @@
     <div class="navigation-desktop">
         <nav role="navigation">
             <ul>
-                <li><a href="index.php?page=home">Home</a></li>
-                <li><a href="http://localhost/projet_coworking/index.php?page=login">Connexion</a></li>
-                <li><a href="index.php?page=etablissement">Etablissement</a></li>
-                <li><a href="http://localhost/projet_coworking/index.php?page=contact">Contact</a></li>
+            <li><a href="index.php?page=home">Home</a></li>
+            <li><a href="index.php?page=login">Connexion</a></li>
+            <li><a href="index.php?page=etablissement">Etablissement</a></li>
+            <li><a href="index.php?page=contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -27,9 +27,10 @@
         <span class="burger-bottom"></span>
     </div>
     <div class="burger-menu">
-        <a href="http://localhost:8888/Projet_CoWorking/index.php?page=home">Accueil</a>
-        <a href="http://localhost/projet_coworking/index.php?page=login">Se connecter</a>
-        <a href="#">Ajout d'un établissement</a>
+                <a href="index.php?page=home">Accueil</a>
+                <a href="index.php?page=login">Se connecter</a>
+                <a href="index.php?page=etablissement">Ajout d'un établissement</a>
+                <a href="index.php?page=resultats">Liste des établissements</a>
     </div>
 </nav>
 
