@@ -1,3 +1,42 @@
 .h1-inscription {
-    margin: 200px;
+    color: #D66B24;
+    font-size: 2em;
+    margin: 0 0 20px;
+    text-align: center;
+    margin-top: 30%;
 }
+
+h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.msg {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    top: 15%
+}
+
+@media screen and (min-width: 993px) {
+    .h1-inscription {
+        margin-top: 5%;
+    }
+    form ul {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .h1-inscription {
+        margin-top: 10%;
+    }
+    form ul {
+        right: 15%;
+        left: 15%;
+    }
+
+}
+
+

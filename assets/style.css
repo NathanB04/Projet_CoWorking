@@ -9,6 +9,7 @@
 @import url('./contact.css');
 @import url('./login.css');
 @import url('./formulaire.css');
+@import url('./inscription.css');
 
 
 * {
@@ -49,10 +50,10 @@ h1 {
     margin: 0 0 20px;
 }
 
-h2 {
+/* h2 {
     font-size: 1.5em;;
     margin: 0 0 15px;
-}
+} */
 
 header nav ul {
     display: flex;
