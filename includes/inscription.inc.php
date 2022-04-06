@@ -14,26 +14,26 @@ if (isset($_POST['inscription'])) {
     $erreur = array();
 
     if (preg_match('/(*UTF8)^[[:alpha:]]+$/', html_entity_decode($nom)) !== 1)
-        array_push($erreur, "Veuillez saisir votre nom");
+        array_push($erreur, "<p class='msg'>Veuillez saisir votre nom");
     else
         $nom = html_entity_decode($nom);
 
     if (preg_match('/(*UTF8)^[[:alpha:]]+$/', html_entity_decode($prenom)) !== 1)
-        array_push($erreur, "Veuillez saisir votre prénom");
+        array_push($erreur, "<p class='msg'>Veuillez saisir votre prénom</p>");
     else
         $prenom = html_entity_decode($prenom);
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL))
-        array_push($erreur, "Veuillez saisir un e-mail valide");
+        array_push($erreur, "<p class='msg'>Veuillez saisir un e-mail valide</p>");
 
     if (strlen($password) === 0)
-        array_push($erreur, "Veuillez saisir un mot de passe");
+        array_push($erreur, "<p class='msg'>Veuillez saisir un mot de passe</p>");
 
     if (strlen($passwordValidation) === 0)
-        array_push($erreur, "Veuillez saisir la vérification de votre mot de passe");
+        array_push($erreur, "<p class='msg'>Veuillez saisir la vérification de votre mot de passe</p>");
 
     if ($password !== $passwordValidation)
-        array_push($erreur, "Vos mots de passe ne correspondent pas");
+        array_push($erreur, "<p class='msg'>Vos mots de passe ne correspondent pas</p>");
 
     if (count($erreur) === 0) {
         $serverName = "localhost";
@@ -51,7 +51,7 @@ if (isset($_POST['inscription'])) {
             $resultat = $requete->fetchAll(PDO::FETCH_OBJ);
            
             if(count($resultat) !== 0) {
-                echo "<p>Votre adresse est déjà enregistrée dans la base de données</p>";
+                echo "<p class='msg'>Votre adresse est déjà enregistrée dans la base de données</p>";
             }
 
             else {
@@ -66,7 +66,7 @@ if (isset($_POST['inscription'])) {
                 $query->bindParam(':password', $password);
                 $query->execute();
                 
-                echo "<p>Votre compte à bien été créer !</p>";
+                echo "<p class='msg'>Votre compte à bien été crée !</p>";
             }
         } catch (PDOException $e) {
             die("Erreur :  " . $e->getMessage());
@@ -74,7 +74,7 @@ if (isset($_POST['inscription'])) {
 
         $conn = null;
     } else {
-        $messageErreur = "<ul>";
+        $messageErreur = "<ul class='msg'>";
         $i = 0;
         do {
             $messageErreur .= "<li>" . $erreur[$i] . "</li>";

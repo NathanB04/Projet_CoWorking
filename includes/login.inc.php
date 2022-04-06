@@ -1,4 +1,7 @@
+<h1 class="h1-login">Connexion</h1>
+
 <?php
+
 if (isset($_POST['envoi'])) {
     $mail = htmlentities(trim($_POST['mail'])) ?? '';
     $mdp = htmlentities(trim($_POST['mdp'])) ?? '';
@@ -6,10 +9,10 @@ if (isset($_POST['envoi'])) {
     $erreur = array();
 
     if (strlen($mail) === 0)
-        array_push($erreur, "Veuillez saisir votre nom");
+        array_push($erreur, "<p class='msg'>Veuillez saisir votre nom</p>");
 
     if (strlen($mdp) === 0)
-        array_push($erreur, "Veuillez saisir un mot de passe");
+        array_push($erreur, "<p class='msg'>Veuillez saisir un mot de passe</p>");
 
     if (count($erreur) === 0) {
         $serverName = "localhost";
@@ -29,7 +32,7 @@ if (isset($_POST['envoi'])) {
             $resultat = $requete->fetchAll(PDO::FETCH_OBJ);
 
             if (count($resultat) === 0) {
-                echo "Pas de résultat avec votre login/mot de passe";
+                echo "<p class='msg'>Pas de résultat avec votre login/mot de passe</p>";
             }
 
             else {
@@ -46,11 +49,11 @@ if (isset($_POST['envoi'])) {
                         </script>";
                     }
                     else {
-                        echo "<p>Vous êtes déjà connecté, donc vous navez rien à faire ici";
+                        echo "<p class='msg'>Vous êtes déjà connecté, donc vous navez rien à faire ici</p>";
                     }
                 }
                 else {
-                    echo "Bien tenté, mais non";
+                    echo "<p class='msg'>Bien tenté, mais non</p>";
                 }
             }
 
