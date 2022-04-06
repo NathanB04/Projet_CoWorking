@@ -1,5 +1,5 @@
 <div class="logo">
-    <a href="http://localhost/Projet_CoWorking/">
+    <a href="index.php?page=home">
         <img src="./assets/img/coffice_logo_blanc.png" alt="logo Coffice"> 
     </a>
 </div>
@@ -9,7 +9,17 @@
         <nav role="navigation">
             <ul>
             <li><a href="index.php?page=home">Home</a></li>
-            <li><a href="index.php?page=login">Connexion</a></li>
+            <?php
+                if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
+                    echo "<li><a href=\"index.php?page=logout\">Logout</a></li>";
+                    echo "<li><a href=\"index.php?page=account\">Compte</a></li>";
+                }
+                else {
+                    echo "<li><a href=\"index.php?page=login\">Connexion</a></li>";
+                    echo "<li><a href=\"index.php?page=inscription\">Inscription</a></li>";
+                }
+            ?>
+            <!-- <li><a href="index.php?page=login">Connexion</a></li> -->
             <li><a href="index.php?page=etablissement">Etablissement</a></li>
             <li><a href="index.php?page=contact">Contact</a></li>
             </ul>

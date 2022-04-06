@@ -15,7 +15,7 @@ if (isset($_POST['envoi'])) {
         $serverName = "localhost";
         $userName = "root";
         $database = "coffice";
-        $userPassword = "";
+        $userPassword = "root";
 
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
@@ -42,7 +42,7 @@ if (isset($_POST['envoi'])) {
                         $_SESSION['role'] = $resultat[0]->id_role;
                         $_SESSION['pseudo'] = $resultat[0]->pseudo;
                         echo "<script>
-                        document.location.replace('http://localhost/projet_coworking/index.php?page=contact');
+                        document.location.replace('index.php?page=home');
                         </script>";
                     }
                     else {
