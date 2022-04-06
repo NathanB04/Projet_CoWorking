@@ -54,7 +54,7 @@
                     <option value="cafe">Café</option>
                     <option value="restaurant">Restaurant</option>
                 </select>
-            <input id="searchTextField" type="text" name="city" size="30" placeholder="Indiquez un lieu"/> <br>
+            <input id="searchTextField" type="textPlace" name="city" size="30" placeholder="Indiquez un lieu"/> <br>
             <input type="submit" style="width: 8rem; height: 30px; background-color: #d66b24; 
             border-radius: 30px; color:white; font-weight:600; text-align:center">
             </form>
