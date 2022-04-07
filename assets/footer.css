@@ -42,3 +42,9 @@ footer {
     font-size: 0.8em;
     padding: 5px;   
 }
+
+@media screen and (min-device-width: 760px) and (max-device-width: 992px) {
+    .footer_container{
+        gap: 30rem;
+    }
+}
