@@ -58,3 +58,9 @@ footer {
         gap: 30rem;
     }
 }
+
+@media screen and (min-width : 993px) {
+    footer {
+        display: none;
+    }
+}
