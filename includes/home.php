@@ -35,9 +35,9 @@
             <div class="burger-menu">
                 <a href="index.php?page=home">Accueil</a>
                 <a href="index.php?page=login">Connexion</a>
+                <a href="index.php?page=inscription">Inscription</a>
                 <a href="index.php?page=etablissement">Ajout d'un établissement</a>
                 <a href="index.php?page=resultats">Liste des établissements</a>
-                <a href="index.php?page=inscription">Inscription</a>
 
             </div>
     </nav>
@@ -81,3 +81,14 @@
      </div>
     <script src="js/maps.js"></script>
     <script src="js/burger.js"></script>
+    </body>
+
+<footer>
+<div class="footer_container">
+    <div class="button-add">
+        <a href="index.php?page=ajoutEtablissement">
+        <img src="./assets/img/button-add.png" alt="bouton ajouter etablissement">
+        </a>
+    </div>
+</div>
+</footer>

@@ -38,9 +38,9 @@
     <div class="burger-menu">
                 <a href="index.php?page=home">Accueil</a>
                 <a href="index.php?page=login">Connexion</a>
+                <a href="index.php?page=inscription">Inscription</a>
                 <a href="index.php?page=etablissement">Ajout d'un établissement</a>
                 <a href="index.php?page=resultats">Liste des établissements</a>
-                <a href="index.php?page=inscription">Inscription</a>
     </div>
 </nav>
 
@@ -50,11 +50,9 @@
 
 <footer>
 <div class="footer_container">
-    <div class="footer_phone">
-        <p> 📞  +33 6 12 34 56 78</p>
-    </div>
-     <div class="footer_logo-maps">
-        <img src="./assets/img/logo_google-maps.png" alt="logo google maps">
-     </div>
+<div class="button-add">
+        <a href="index.php?page=ajoutEtablissement">
+        <img src="./assets/img/button-add.png" alt="bouton ajouter etablissement">
+        </a>    
 </div>
 </footer>
