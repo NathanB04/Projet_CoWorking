@@ -16,6 +16,16 @@
     right: 3%;
 }
 
+.button-add img {
+    position: relative;
+    max-width: 65px;
+    bottom: 4px;
+}
+
+.button-add {
+    max-width: 100%;
+    position: relative;
+}
 
 .footer_phone p {
     position: absolute;
