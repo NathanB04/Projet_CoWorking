@@ -37,7 +37,10 @@
     </div>
     <div class="burger-menu">
                 <a href="index.php?page=home">Accueil</a>
-                <a href="index.php?page=login">Connexion</a>
+                <?php
+                if(isset($_SESSION['login']) && $_SESSION['login'] === true) {
+                    echo "<a href=\"index.php?page=logout\">Logout</a>";}
+                    ?>
                 <a href="index.php?page=inscription">Inscription</a>
                 <a href="index.php?page=etablissement">Ajout d'un établissement</a>
                 <a href="index.php?page=resultats">Liste des établissements</a>
