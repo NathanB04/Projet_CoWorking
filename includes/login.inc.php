@@ -49,7 +49,7 @@ if (isset($_POST['envoi'])) {
                         </script>";
                     }
                     else {
-                        echo "<p class='msg'>Vous êtes déjà connecté, donc vous navez rien à faire ici</p>";
+                        echo "<p class='msg'>Vous êtes déjà connecté, donc vous n'avez rien à faire ici</p>";
                     }
                 }
                 else {
