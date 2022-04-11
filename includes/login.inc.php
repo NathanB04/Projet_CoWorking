@@ -18,7 +18,7 @@ if (isset($_POST['envoi'])) {
         $serverName = "localhost";
         $userName = "root";
         $database = "coffice";
-        $userPassword = "root";
+        $userPassword = "";
 
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
