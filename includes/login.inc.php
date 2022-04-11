@@ -15,12 +15,18 @@ if (isset($_POST['envoi'])) {
         array_push($erreur, "<p class='msg'>Veuillez saisir un mot de passe</p>");
 
     if (count($erreur) === 0) {
-        $serverName = "";
-        $userName = "";
-        $database = "";
+        $serverName = "localhost";
+        $userName = "root";
+        $database = "coffice";
         $userPassword = "";
 
         try {
+            $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            //$estcequilestdanslabase = $conn->query("SELECT * FROM utilisateurs WHERE mail='$mail'");
+            //$nombreLignes = $estcequilestdanslabase->fetchColumn();
+
             $requete = $conn->prepare("SELECT * FROM users WHERE email='$mail'");
             $requete->execute();
             $resultat = $requete->fetchAll(PDO::FETCH_OBJ);
@@ -79,4 +85,3 @@ else {
 }
 
 include 'login.php';
-include 'connectionBDD.php';
