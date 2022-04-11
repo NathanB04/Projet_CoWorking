@@ -30,6 +30,7 @@
         </div>
     </header>
 
+<<<<<<< HEAD
     <nav>
         <div class="burger-button">
             <span class="burger-top"></span>
@@ -43,6 +44,22 @@
             <a href="index.php?page=resultats">Liste des établissements</a>
         </div>
     </nav>
+=======
+<nav>
+    <div class="burger-button">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+    </div>
+    <div class="burger-menu">
+                <a href="index.php?page=home">Accueil</a>
+                <a href="index.php?page=login">Connexion</a>
+                <a href="index.php?page=inscription">Inscription</a>
+                <a href="index.php?page=etablissement">Ajout d'un établissement</a>
+                <a href="index.php?page=resultats">Liste des établissements</a>
+    </div>
+ </nav>
+>>>>>>> 243fd8fee4074fcef850d8542754d8d1e6bcce32
 
     <div class="body_container">
         <div class="title-etablissement-page">

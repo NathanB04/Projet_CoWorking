@@ -12,28 +12,24 @@ h2 {
     text-align: center;
 }
 
-@media screen and (min-width: 993px) {
-    .h1-login {
-        margin-top: 13%;
-    }
-}
 
 @media screen and (min-width: 993px) {
     .h1-login {
-        margin-top: 5%;
-    }
-    form ul {
-        margin-top: 15%;
+        margin-top: 8%;
     }
 }
 
-@media screen and (max-width: 767px) {
+
+@media screen and (min-device-width: 760px) and (max-device-width: 992px) {
+    .h1-login {
+        margin-top: 20%;
+    }
+}
+
+
+@media screen and (max-width: 759px) {
     .h1-login {
         margin-top: 10%;
-    }
-    form ul {
-        right: 15%;
-        left: 15%;
     }
 
 }

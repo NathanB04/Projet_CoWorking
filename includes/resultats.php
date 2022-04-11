@@ -30,6 +30,7 @@
         </div>
     </header>
 
+<<<<<<< HEAD
     <nav>
         <div class="burger-button">
             <span class="burger-top"></span>
@@ -43,6 +44,22 @@
             <a href="index.php?page=resultats">Liste des établissements</a>
         </div>
     </nav>
+=======
+<nav>
+    <div class="burger-button">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+    </div>
+    <div class="burger-menu">
+                <a href="index.php?page=home">Accueil</a>
+                <a href="index.php?page=login">Connexion</a>
+                <a href="index.php?page=inscription">Inscription</a>
+                <a href="index.php?page=etablissement">Ajout d'un établissement</a>
+                <a href="index.php?page=resultats">Liste des établissements</a>
+    </div>
+</nav>
+>>>>>>> 243fd8fee4074fcef850d8542754d8d1e6bcce32
 
     <div class="container">
         <div class="product-details">
@@ -129,6 +146,7 @@
 </body>
 
 <footer>
+<<<<<<< HEAD
     <div class="footer_container">
         <div class="footer_phone">
             <p> 📞 +33 6 12 34 56 78</p>
@@ -137,4 +155,13 @@
             <img src="./assets/img/logo_google-maps.png" alt="logo google maps">
         </div>
     </div>
+=======
+<div class="footer_container">
+<div class="button-add">
+        <a href="index.php?page=ajoutEtablissement">
+        <img src="./assets/img/button-add.png" alt="bouton ajouter etablissement">
+        </a>
+    </div>
+</div>
+>>>>>>> 243fd8fee4074fcef850d8542754d8d1e6bcce32
 </footer>

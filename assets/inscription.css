@@ -21,14 +21,29 @@ h2 {
 
 @media screen and (min-width: 993px) {
     .h1-inscription {
-        margin-top: 5%;
+        margin-top: 8%;
     }
     form ul {
-        margin-top: 15%;
+        margin-top: 20%;
+    }
+
+    .msg {
+        top: 20%
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-device-width: 760px) and (max-device-width: 992px) {
+    .h1-inscription {
+        margin-top: 20%;
+    }
+
+    .msg {
+        top: 27%;
+    }
+}
+
+
+@media screen and (max-width: 759px) {
     .h1-inscription {
         margin-top: 10%;
     }

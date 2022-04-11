@@ -34,9 +34,11 @@
             </div>
             <div class="burger-menu">
                 <a href="index.php?page=home">Accueil</a>
-                <a href="index.php?page=login">Se connecter</a>
+                <a href="index.php?page=login">Connexion</a>
+                <a href="index.php?page=inscription">Inscription</a>
                 <a href="index.php?page=etablissement">Ajout d'un établissement</a>
                 <a href="index.php?page=resultats">Liste des établissements</a>
+
             </div>
     </nav>
     </div>
@@ -47,10 +49,10 @@
 
 <div class="container_home">
     <div class="homepage">
-        <img src="assets/img/homepage_desktop.png">
+        <img src="assets/img/COVER_HOME.png">
     </div> 
     <div class="homepageMobile">
-        <img src="assets/img/ResponsiveHome.jpeg">
+        <img src="assets/img/COVER_HOME_Portrait.png">
     </div>
     <div class="Logo_concept">
     <img src="./assets/img/coffice_concept.png">
@@ -79,3 +81,14 @@
      </div>
     <script src="js/maps.js"></script>
     <script src="js/burger.js"></script>
+    </body>
+
+<footer>
+<div class="footer_container">
+    <div class="button-add">
+        <a href="index.php?page=ajoutEtablissement">
+        <img src="./assets/img/button-add.png" alt="bouton ajouter etablissement">
+        </a>
+    </div>
+</div>
+</footer>

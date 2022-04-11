@@ -9,7 +9,7 @@ if (isset($_POST['envoi'])) {
     $erreur = array();
 
     if (strlen($mail) === 0)
-        array_push($erreur, "<p class='msg'>Veuillez saisir votre nom</p>");
+        array_push($erreur, "<p class='msg'>Veuillez saisir votre email</p>");
 
     if (strlen($mdp) === 0)
         array_push($erreur, "<p class='msg'>Veuillez saisir un mot de passe</p>");
@@ -49,7 +49,7 @@ if (isset($_POST['envoi'])) {
                         </script>";
                     }
                     else {
-                        echo "<p class='msg'>Vous êtes déjà connecté, donc vous navez rien à faire ici</p>";
+                        echo "<p class='msg'>Vous êtes déjà connecté, donc vous n'avez rien à faire ici</p>";
                     }
                 }
                 else {
@@ -65,7 +65,7 @@ if (isset($_POST['envoi'])) {
         $conn = null;
     }
     else {
-        $messageErreur = "<ul>";
+        $messageErreur = "<ul class='msg'>";
         $i = 0;
         do {
             $messageErreur .= "<li>";
