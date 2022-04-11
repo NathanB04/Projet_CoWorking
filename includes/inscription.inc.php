@@ -3,6 +3,7 @@
 <?php
 
 include 'inscription.php';
+include 'connectionBDD.php';
 
 if (isset($_POST['inscription'])) {
     $nom = htmlentities(mb_strtoupper(trim($_POST['name']))) ?? '';
@@ -36,16 +37,12 @@ if (isset($_POST['inscription'])) {
         array_push($erreur, "<p class='msg'>Vos mots de passe ne correspondent pas</p>");
 
     if (count($erreur) === 0) {
-        $serverName = "localhost";
-        $userName = "root";
-        $database = "coffice";
+        $serverName = "";
+        $userName = "";
+        $database = "";
         $userPassword = "";
 
         try {
-            $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $password = password_hash($password, PASSWORD_DEFAULT);
-            
             $requete = $conn->prepare("SELECT * FROM users WHERE email='$email'");
             $requete->execute();
             $resultat = $requete->fetchAll(PDO::FETCH_OBJ);
