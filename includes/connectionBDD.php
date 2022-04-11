@@ -1,13 +1,6 @@
 <?php
 //PARAMS
-if(($_SERVER['SERVER_ADDR'] == '127.0.0.0') || ($_SERVER['SERVER_ADDR'] == '::1')){
-    $serveurName = 'localhost';                  //LOCAL HOST
-    $userName = 'root';                       //LOCAL USER
-    $userPassword = '';                           //LOCAL PASS
-    $database = 'coffice';                   //LOCAL DBNAME
-    // $siteParams['debugMode'] = true;        //TRUE: AFFICHE LES ERREURS PHP / PDO
-    error_reporting(E_ALL);
-} else {
+{
     $dbhost = 'localhost';                      //PRODUCTION HOST
     $dbuser = 'misa0198_cafe';                               //PRODUCTION USER
     $dbpass = 'DTU~T%G8M3k@';                               //PRODUCTION PASS
