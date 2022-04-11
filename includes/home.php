@@ -49,10 +49,10 @@
 
 <div class="container_home">
     <div class="homepage">
-        <img src="assets/img/homepage_desktop.png">
+        <img src="assets/img/COVER_HOME.png">
     </div> 
     <div class="homepageMobile">
-        <img src="assets/img/ResponsiveHome.jpeg">
+        <img src="assets/img/COVER_HOME_Portrait.png">
     </div>
     <div class="Logo_concept">
     <img src="./assets/img/coffice_concept.png">

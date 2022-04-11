@@ -201,7 +201,7 @@ body
     {
         width: 100%;
         top: 0;
-        height: 100vh;
+        height: 93vh;
     }
 
     .navigation-desktop 
@@ -235,7 +235,7 @@ body
 
     .Logo_concept 
     {
-        top: 20%;
+        top: 12%;
         margin-left: 6%;
         position: absolute;
     }
