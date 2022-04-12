@@ -71,8 +71,6 @@
 <div class="phone">
     <p><o>Numéro de téléphone :</o> 00.00.00.00.00</p>
 </div>
->>>>>>> 243fd8fee4074fcef850d8542754d8d1e6bcce32
-
 
     <script src="js/burger.js"></script>
 </body>
@@ -93,5 +91,4 @@
         </a>
     </div>
 </div>
->>>>>>> 243fd8fee4074fcef850d8542754d8d1e6bcce32
 </footer>
