@@ -47,14 +47,19 @@
 
 <h1 class="TITLE-PAGE-ETABLISSEMENT-ADD"> AJOUT ETABLISSEMENT </h1>
 
-<form action="index.php?page=inscription" method="post" enctype="multipart/form-data">
+<form action="index.php?page=ajoutEtablissement" method="post" enctype="multipart/form-data">
     <ul>
-        <li><label for="nom">Nom :</label><input type="text" id="name" name="name" value="<?php echo $nom;?>" /></li>
-        <li><label for="prenom">Prénom :</label><input type="text" id="firstname" name="firstname"  value="<?php echo $prenom;?>" /></li>
-        <li><label for="email">e-mail :</label><input type="text" id="email" name="email"  value="<?php echo $email;?>" /></li>
-        <li><label for="password">Mot de passe :</label><input type="password" id="password" name="password" /></li>
-        <li><label for="passwordverif">Vérification mot de passe :</label><input type="password" id="passwordverif" name="passwordverif" /></li>
-        <li><input type="reset" value="Effacer" /><input type="submit" value="S'inscrire" name="inscription" /></li>
+        <li><label for="nom">Nom :</label><input type="text" id="name" name="name"/></li>
+        <li><label for="adresse">Adresse :</label><input type="text" id="adresse" name="adresse"/></li>
+        <li><label for="description">Description :</label><textarea id="description" name="description"  value="<?php echo $description;?>"></textarea></li>
+        <li><label for="horaires">Horaires</label>
+        <li><label for="horaires">Ouverture :</label><input type="time" id="horaire" name="ouverture" value="<?php echo $ouverture;?>"/></li>
+        <li><label for="horaires">Fermeture :</label><input type="time" id="horaire" name="fermeture" value="<?php echo $fermeture;?>"/></li>
+        <li><label for="etablissement">Etablissement :</label><select name="etablissement" id="etablissement" value="<?php echo $etablissement;?>">
+            <option value="cafe">Café</option>
+            <option value="restaurant">Restaurant</option></select></li>       
+        <li><label for="photo">Photo :</label><input type="file" id="photo" name="photo" /></li>
+        <li><input type="reset" value="Effacer" /><input type="submit" value="Ajouter" name="inscription" /></li>
     </ul>
 </form>
 <script src="js/burger.js"></script>
