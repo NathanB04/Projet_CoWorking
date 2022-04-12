@@ -3,7 +3,7 @@
 include 'ajoutEtablissement.php';
 
 if (isset($_POST['ajoutEtablissement'])) {
-    $nom = trim(mb_strtolower($_POST['nom'])) ?? '';
+    $nomEtablissement = trim(mb_strtolower($_POST['nom'])) ?? '';
     $adresse = trim(mb_strtolower($_POST['adresse'])) ?? '';
     $description = trim(mb_strtolower($_POST['description'])) ?? '';
     $horaires = trim(mb_strtolower($_POST['horaires'])) ?? '';
@@ -80,9 +80,9 @@ if (isset($_POST['ajoutEtablissement'])) {
             else {
                 $query = $conn->prepare("
                 INSERT INTO Etablissement(nom, adresse, description, horaires, Etablissement, Photo)
-                VALUES (:nom, :adresse, :description, :horaires, :Etablissement, :Photo)
+                VALUES (NULL, :nom, :adresse, :description, :horaires, :Etablissement, :Photo)
                 ");
-                $query->bindParam(':nom', $nom, PDO::PARAM_STR_CHAR);
+                $query->bindParam(':nom', $nomEtablissement, PDO::PARAM_STR_CHAR);
                 $query->bindParam(':adresse', $adresse);
                 $query->bindParam(':description', $description);
                 $query->bindParam(':horaires', $horaires, PDO::PARAM_STR_CHAR);
@@ -113,5 +113,5 @@ if (isset($_POST['ajoutEtablissement'])) {
     }
 } else {
     echo "<h2>Merci de renseigner le formulaire&nbsp;:</h2>";
-    $nom = $adresse = '';
+    $nomEtablissement = $adresse = '';
 }
