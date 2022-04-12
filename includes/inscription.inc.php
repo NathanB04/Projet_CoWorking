@@ -39,7 +39,7 @@ if (isset($_POST['inscription'])) {
         $serverName = "localhost";
         $userName = "root";
         $database = "coffice";
-        $userPassword = "";
+        $userPassword = "root";
 
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);

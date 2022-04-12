@@ -54,8 +54,6 @@
             <o>Numéro de téléphone :</o> 00.00.00.00.00
         </p>
     </div>
-<<<<<<< HEAD
-=======
     <div class="burger-menu">
                 <a href="index.php?page=home">Accueil</a>
                 <a href="index.php?page=login">Connexion</a>
@@ -80,7 +78,6 @@
 </body>
 
 <footer>
-<<<<<<< HEAD
     <div class="footer_container">
         <div class="footer_phone">
             <p> 📞 +33 6 12 34 56 78</p>
@@ -89,7 +86,6 @@
             <img src="./assets/img/logo_google-maps.png" alt="logo google maps">
         </div>
     </div>
-=======
 <div class="footer_container">
 <div class="button-add">
         <a href="index.php?page=ajoutEtablissement">
