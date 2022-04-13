@@ -37,9 +37,9 @@ if (isset($_POST['inscription'])) {
 
     if (count($erreur) === 0) {
         $serverName = "localhost";
-        $userName = "root";
-        $database = "coffice";
-        $userPassword = "root";
+        $userName = "misa0198_cafe";
+        $database = "misa0198_cafe";
+        $userPassword = "DTU~T%G8M3k@";
 
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
