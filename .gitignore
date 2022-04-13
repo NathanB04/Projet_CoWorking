@@ -70,3 +70,4 @@ includes/footer.php
 includes/pageResultats.php
 includes/pageResultats.inc.php
 includes/connectionBDD.php
+includes/connectionBDD.php
