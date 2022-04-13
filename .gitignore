@@ -69,3 +69,4 @@ includes/nav.php
 includes/footer.php
 includes/pageResultats.php
 includes/pageResultats.inc.php
+includes/connectionBDD.php
