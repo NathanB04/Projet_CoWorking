@@ -38,7 +38,7 @@
         <div class="burger-menu">
             <a href="index.php?page=home">Accueil</a>
             <a href="index.php?page=login">Se connecter</a>
-            <a href="index.php?page=etablissement">Ajout d'un établissement</a>
+            <a href="index.php?page=ajoutEtablissement">Ajout d'un établissement</a>
             <a href="index.php?page=resultats">Liste des établissements</a>
         </div>
     </nav>
@@ -54,24 +54,6 @@
             <o>Numéro de téléphone :</o> 00.00.00.00.00
         </p>
     </div>
-    <div class="burger-menu">
-                <a href="index.php?page=home">Accueil</a>
-                <a href="index.php?page=login">Connexion</a>
-                <a href="index.php?page=inscription">Inscription</a>
-                <a href="index.php?page=etablissement">Ajout d'un établissement</a>
-                <a href="index.php?page=resultats">Liste des établissements</a>
-                
-    </div>
-</nav>
-
-<div class="email">
-    <p><o>E-mail :</o> lorem@lorem.com</p>
-</div>
-
-<div class="phone">
-    <p><o>Numéro de téléphone :</o> 00.00.00.00.00</p>
-</div>
-
     <script src="js/burger.js"></script>
 </body>
 
