@@ -44,20 +44,6 @@
         </div>
     </nav>
 
-<nav>
-    <div class="burger-button">
-        <span class="burger-top"></span>
-        <span class="burger-middle"></span>
-        <span class="burger-bottom"></span>
-    </div>
-    <div class="burger-menu">
-                <a href="index.php?page=home">Accueil</a>
-                <a href="index.php?page=login">Connexion</a>
-                <a href="index.php?page=inscription">Inscription</a>
-                <a href="index.php?page=ajoutEtablissement">Ajout d'un établissement</a>
-                <a href="index.php?page=resultats">Liste des établissements</a>
-    </div>
- </nav>
 
     <div class="body_container">
         <div class="title-etablissement-page">
