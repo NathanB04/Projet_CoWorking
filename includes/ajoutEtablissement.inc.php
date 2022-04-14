@@ -1,3 +1,5 @@
+<h1 class="h1-add-Etablissement">Ajout Etablissement</h1>
+
 <?php
 
 include 'ajoutEtablissement.php';
@@ -63,7 +65,7 @@ if (isset($_POST['ajoutEtablissement'])) {
         $serverName = "localhost";
         $userName = "root";
         $database = "coffice";
-        $userPassword = "";
+        $userPassword = "root";
 
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
@@ -80,7 +82,7 @@ if (isset($_POST['ajoutEtablissement'])) {
             else {
                 $query = $conn->prepare("
                 INSERT INTO Etablissement(nom, adresse, description, horaires, Etablissement, Photo)
-                VALUES (NULL, :nom, :adresse, :description, :horaires, :Etablissement, :Photo)
+                VALUES (:nom, :adresse, :description, :horaires, :Etablissement, :Photo)
                 ");
                 $query->bindParam(':nom', $nomEtablissement, PDO::PARAM_STR_CHAR);
                 $query->bindParam(':adresse', $adresse);
@@ -109,7 +111,6 @@ if (isset($_POST['ajoutEtablissement'])) {
         $messageErreur .= "</ul>";
 
         echo $messageErreur;
-        include 'frmInscription.php';
     }
 } else {
     echo "<h2>Merci de renseigner le formulaire&nbsp;:</h2>";

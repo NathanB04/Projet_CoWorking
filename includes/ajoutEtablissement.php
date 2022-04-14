@@ -20,7 +20,7 @@
                 }
             ?>
             <!-- <li><a href="index.php?page=login">Connexion</a></li> -->
-            <li><a href="index.php?page=etablissement">Etablissement</a></li>
+            <li><a href="index.php?page=ajoutEtablissement">Etablissement</a></li>
             <li><a href="index.php?page=contact">Contact</a></li>
             </ul>
         </nav>
@@ -39,18 +39,16 @@
                 <a href="index.php?page=home">Accueil</a>
                 <a href="index.php?page=login">Connexion</a>
                 <a href="index.php?page=inscription">Inscription</a>
-                <a href="index.php?page=etablissement">Ajout d'un établissement</a>
+                <a href="index.php?page=ajoutEtablissement">Ajout d'un établissement</a>
                 <a href="index.php?page=resultats">Liste des établissements</a>
                 
     </div>
 </nav>
 
-<h1 class="TITLE-PAGE-ETABLISSEMENT-ADD"> AJOUT ETABLISSEMENT </h1>
-
 <form action="index.php?page=ajoutEtablissement" method="post" enctype="multipart/form-data">
     <ul>
-        <li><label for="nom">Nom :</label><input type="text" id="nom" name="nom" value="<?php echo $nomEtablissement;?>"/></li>
-        <li><label for="adresse">Adresse :</label><input type="text" id="adresse" name="adresse" value="<?php echo $adresse;?>"/></li>
+        <li><label for="nom">Nom :</label><input type="text" id="nom" name="nom" value="<?php echo (isset($nomEtablissement)) ? $nomEtablissement : '';;?>"/></li>
+        <li><label for="adresse">Adresse :</label><input type="text" id="adresse" name="adresse" value="<?php echo (isset($adresse)) ? $adresse : '';;?>"/></li>
         <li><label for="description">Description :</label><textarea id="description" name="description"  value="<?php echo $description;?>"></textarea></li>
         <li><label for="horaires">Horaires</label>
         <li><label for="horaires">Ouverture :</label><input type="time" id="horaire" name="ouverture" value="<?php echo $horaire;?>"/></li>
