@@ -55,7 +55,7 @@
             <div class="control">
                 <button class="btn">
                     <span class="moreInfo">
-                        <g>Plus d'info</g>
+                        <g><a href="index.php?page=etablissement">Plus d'info</g>
                     </span>
                 </button>
             </div>
@@ -75,7 +75,7 @@
             <div class="control">
                 <button class="btn">
                     <span class="moreInfo">
-                        <g>Plus d'info</g>
+                    <g><a href="index.php?page=etablissement">Plus d'info</g>
                     </span>
                 </button>
             </div>
@@ -95,7 +95,7 @@
             <div class="control">
                 <button class="btn">
                     <span class="moreInfo">
-                        <g>Plus d'info</g>
+                    <g><a href="index.php?page=etablissement">Plus d'info</g>
                     </span>
                 </button>
             </div>
@@ -115,7 +115,7 @@
             <div class="control">
                 <button class="btn">
                     <span class="moreInfo">
-                        <g>Plus d'info</g>
+                    <g><a href="index.php?page=etablissement">Plus d'info</g>
                     </span>
                 </button>
             </div>
