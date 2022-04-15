@@ -57,7 +57,7 @@
             <option value="cafe">Café</option>
             <option value="restaurant">Restaurant</option></select></li>       
         <li><label for="photo">Photo :</label><input type="file" id="Photo" name="photo" value="<?php echo $photo;?>"/></li>
-        <li><input type="reset" value="Effacer" /><input type="submit" value="Ajouter" name="inscription" /></li>
+        <li><input type="reset" value="Effacer" /><input type="submit" name="ajoutEtablissement" value="Ajouter" name="inscription" /></li>
     </ul>
 </form>
 <script src="js/burger.js"></script>

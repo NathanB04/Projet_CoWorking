@@ -2,17 +2,44 @@
 
 <?php
 
-include 'ajoutEtablissement.php';
-
 if (isset($_POST['ajoutEtablissement'])) {
-    $nomEtablissement = trim(mb_strtolower($_POST['nom'])) ?? '';
-    $adresse = trim(mb_strtolower($_POST['adresse'])) ?? '';
-    $description = trim(mb_strtolower($_POST['description'])) ?? '';
-    $horaires = trim(mb_strtolower($_POST['horaires'])) ?? '';
-    $etablissement = trim(mb_strtolower($_POST['Etablissement'])) ?? '';
-    $photo = trim(mb_strtolower($_POST['Photo'])) ?? '';
+    $nomEtablissement = htmlentities((trim($_POST['nom']))) ?? '';
+    $adresse = htmlentities(trim($_POST['adresse'])) ?? '';
+    $description = htmlentities(trim($_POST['description'])) ?? '';
+    $horaire_O = trim(mb_strtolower($_POST['ouverture'])) ?? '';
+    $horaire_F = trim(mb_strtolower($_POST['fermeture'])) ?? '';
+    $etablissement = htmlentities(trim($_POST['etablissement'])) ?? '';
 
     $erreur = array();
+    if (preg_match('/(*UTF8)^[[:alpha:]\s]+$/', html_entity_decode($nomEtablissement)) !== 1)
+    array_push($erreur, "<p class='msg'>Veuillez saisir votre nom");
+else
+    $nomEtablissement = html_entity_decode($nomEtablissement);
+
+if (preg_match('/(*UTF8)^[[:alnum:]\s]+$/', ($adresse)) !== 1)
+    array_push($erreur, "<p class='msg'>Veuillez saisir votre adresse</p>");
+else
+    $adresse = ($adresse);
+
+    if (preg_match('/(*UTF8)^[[:alpha:]\s]+$/', html_entity_decode($description)) !== 1)
+    array_push($erreur, "<p class='msg'>Veuillez saisir une description</p>");
+    else
+    $description = html_entity_decode($description);
+
+    if (preg_match('/\d\d:\d\d/', html_entity_decode($horaire_O)) !== 1)
+    array_push($erreur, "<p class='msg'>Veuillez rentrer vos horaires d'ouverture</p>");
+    else
+    $horaire_O = html_entity_decode($horaire_O);
+
+    if (preg_match('/\d\d:\d\d/', html_entity_decode($horaire_F)) !== 1)
+    array_push($erreur, "<p class='msg'>Veuillez rentrer vos horaires de fermeture</p>");
+    else
+    $horaire_F = html_entity_decode($horaire_F);
+
+    if (preg_match('/(*UTF8)^[[:alpha:]]+$/', html_entity_decode($etablissement)) !== 1)
+    array_push($erreur, "<p class='msg'>Veuillez rentrer votre type d'etablissement</p>");
+    else
+    $etablissement = html_entity_decode($etablissement);
 
     if (isset($_FILES['photo']) && $_FILES['photo']['error'] == 0) {
         $fileName = $_FILES['photo']['name'];
@@ -71,24 +98,26 @@ if (isset($_POST['ajoutEtablissement'])) {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
-            $requete = $conn->prepare("SELECT * FROM Etablissement");
+            $requete = $conn->prepare("SELECT * FROM Etablissement WHERE nom = '$nomEtablissement'");
             $requete->execute();
             $resultat = $requete->fetchAll(PDO::FETCH_OBJ);
-           
             if(count($resultat) !== 0) {
-                echo "<p>Votre adresse est déjà enregistrée dans la base de données</p>";
+                echo "<p>Votre établissement est déjà enregistrée dans la base de données</p>";
             }
 
             else {
+                var_dump($horaire_O);
                 $query = $conn->prepare("
-                INSERT INTO Etablissement(nom, adresse, description, horaires, Etablissement, Photo)
-                VALUES (:nom, :adresse, :description, :horaires, :Etablissement, :Photo)
+                INSERT INTO Etablissement(nom, adresse, description, horaire_O, horaire_F, Etablissement, Photo)
+                VALUES (:nomEtablissement, :adresse, :description, :ouverture, :fermeture, :etablissement, :Photo)
                 ");
-                $query->bindParam(':nom', $nomEtablissement, PDO::PARAM_STR_CHAR);
+                $query->bindParam(':nomEtablissement', $nomEtablissement, PDO::PARAM_STR_CHAR);
                 $query->bindParam(':adresse', $adresse);
                 $query->bindParam(':description', $description);
-                $query->bindParam(':horaires', $horaires, PDO::PARAM_STR_CHAR);
-                $query->bindParam(':Etablissement', $etablissement);
+                $query->bindParam(':ouverture', $horaire_O);
+                $query->bindParam(':fermeture', $horaire_F);
+                $query->bindParam(':etablissement', $etablissement);
+                $query->bindParam(':Photo', $fileName);
                 $query->execute();
 
                 move_uploaded_file($fileTmpName, $path . $fileName);
@@ -116,3 +145,4 @@ if (isset($_POST['ajoutEtablissement'])) {
     echo "<h2>Merci de renseigner le formulaire&nbsp;:</h2>";
     $nomEtablissement = $adresse = '';
 }
+include 'ajoutEtablissement.php';
