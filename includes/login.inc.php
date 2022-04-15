@@ -16,9 +16,9 @@ if (isset($_POST['envoi'])) {
 
     if (count($erreur) === 0) {
         $serverName = "localhost";
-        $userName = "root";
-        $database = "coffice";
-        $userPassword = "";
+        $userName = "misa0198_cafe";
+        $database = "misa0198_wifi";
+        $userPassword = "DTU~T%G8M3k@";
 
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);

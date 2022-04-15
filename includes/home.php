@@ -19,7 +19,7 @@
                 }
             ?>
             <!-- <li><a href="index.php?page=login">Connexion</a></li> -->
-            <li><a href="index.php?page=ajoutEtablissement">Etablissement</a></li>
+            <li><a href="index.php?page=resultats">Etablissements</a></li>
             <li><a href="index.php?page=contact">Contact</a></li>
         </ul>
     </nav>
@@ -36,7 +36,7 @@
                 <a href="index.php?page=home">Accueil</a>
                 <a href="index.php?page=login">Connexion</a>
                 <a href="index.php?page=inscription">Inscription</a>
-                <a href="index.php?page=etablissement">Ajout d'un établissement</a>
+                <a href="index.php?page=ajoutEtablissement">Ajout d'un établissement</a>
                 <a href="index.php?page=resultats">Liste des établissements</a>
 
             </div>

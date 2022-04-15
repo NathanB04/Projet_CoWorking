@@ -145,4 +145,4 @@ else
     echo "<h2>Merci de renseigner le formulaire&nbsp;:</h2>";
     $nomEtablissement = $adresse = '';
 }
-include 'ajoutEtablissement.php';
+

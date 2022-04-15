@@ -1,7 +1,35 @@
-.TITLE-PAGE-ETABLISSEMENT-ADD {
-    color: white;
-    margin-top : 50%;
-    font-size: xx-large;
+.h1-add-Etablissement {
+    color: #D66B24;
+    font-size: 2em;
+    margin: 0 0 20px;
     text-align: center;
-    position: absolute;
+    margin-top: 25%;
+}
+
+/* h2 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+} */
+
+
+@media screen and (min-width: 993px) {
+    .h1-add-Etablissement {
+        margin-top: 8%;
+    }
+}
+
+
+@media screen and (min-device-width: 760px) and (max-device-width: 992px) {
+    .h1-add-Etablissement {
+        margin-top: 20%;
+    }
+}
+
+
+@media screen and (max-width: 759px) {
+    .h1-add-Etablissement {
+        margin-top: 10%;
+    }
+
 }
