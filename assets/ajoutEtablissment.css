@@ -5,24 +5,32 @@
     text-align: center;
     margin-top: 25%;
 }
-
-/* h2 {
+h2 {
     color: white;
     font-size: 2em;
     text-align: center;
-} */
-
+}
 
 @media screen and (min-width: 993px) {
     .h1-add-Etablissement {
         margin-top: 8%;
     }
-}
+    form ul {
+        margin-top: 20%;
+    }
 
+    .msg {
+        top: 20%
+    }
+}
 
 @media screen and (min-device-width: 760px) and (max-device-width: 992px) {
     .h1-add-Etablissement {
         margin-top: 20%;
+    }
+
+    .msg {
+        top: 27%;
     }
 }
 
@@ -30,6 +38,10 @@
 @media screen and (max-width: 759px) {
     .h1-add-Etablissement {
         margin-top: 10%;
+    }
+    form ul {
+        right: 15%;
+        left: 15%;
     }
 
 }
