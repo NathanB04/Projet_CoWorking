@@ -38,7 +38,7 @@ if (isset($_POST['inscription'])) {
     if (count($erreur) === 0) {
         $serverName = "localhost";
         $userName = "misa0198_cafe";
-        $database = "misa0198_cafe";
+        $database = "misa0198_wifi";
         $userPassword = "DTU~T%G8M3k@";
 
         try {
