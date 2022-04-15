@@ -1,6 +1,7 @@
 <h1 class="h1-add-Etablissement">Ajout Etablissement</h1>
 
 <?php
+include 'FrmAjoutEtablissement.php';
 
 if (isset($_POST['ajoutEtablissement'])) {
     $nomEtablissement = htmlentities((trim($_POST['nom']))) ?? '';
@@ -12,7 +13,7 @@ if (isset($_POST['ajoutEtablissement'])) {
 
     $erreur = array();
     if (preg_match('/(*UTF8)^[[:alpha:]\s]+$/', html_entity_decode($nomEtablissement)) !== 1)
-    array_push($erreur, "<p class='msg'>Veuillez saisir votre nom");
+    array_push($erreur, "<p class='msg'>Veuillez saisir votre nom</p>");
 else
     $nomEtablissement = html_entity_decode($nomEtablissement);
 
@@ -49,7 +50,7 @@ else
         $tableauTypes = array("image/jpeg", "image/jpg", "image/png", "image/gif");
 
         if (in_array($fileType, $tableauTypes)) {
-            $path = getcwd() . "/PhotosEtablissements/";
+            $path = getcwd() . "/PhotoEtablissement/";
             $date = date('Ymdhis');
             $fileName = $date . $fileName;
             $fileNameFinal = $path . $fileName;
@@ -62,37 +63,37 @@ else
         $fileUploadError = $_FILES['photo']['error'];
         switch($fileUploadError) {
             case 1 :
-                $fileUploadErrorMessage = "La taille du fichier téléchargé excède la valeur de upload_max_filesize.";
+                $fileUploadErrorMessage = "<p class='msg'>La taille du fichier téléchargé excède la valeur de upload_max_filesize.</p>";
             break;
             case 2 :
-                $fileUploadErrorMessage = "La taille du fichier téléchargé excède la valeur de MAX_FILE_SIZE, qui a été spécifiée dans le formulaire HTML.";
+                $fileUploadErrorMessage = "<p class='msg'>La taille du fichier téléchargé excède la valeur de MAX_FILE_SIZE, qui a été spécifiée dans le formulaire HTML.</p>";
             break;
             case 3 :
-                $fileUploadErrorMessage = "Le fichier n'a été que partiellement téléchargé.";
+                $fileUploadErrorMessage = "<p class='msg'>Le fichier n'a été que partiellement téléchargé.</p>";
             break;
             case 4 :
-                $fileUploadErrorMessage = "Aucun fichier n'a été téléchargé.";
+                $fileUploadErrorMessage = "<p class='msg'>Aucun fichier n'a été téléchargé.</p>";
             break;
             case 6 :
-                $fileUploadErrorMessage = "Un dossier temporaire est manquant.";
+                $fileUploadErrorMessage = "<p class='msg'>Un dossier temporaire est manquant.</p>";
             break;
             case 7 :
-                $fileUploadErrorMessage = "Échec de l'écriture du fichier sur le disque.";
+                $fileUploadErrorMessage = "<p class='msg'>Échec de l'écriture du fichier sur le disque.</p>";
             break;
             case 8 :
-                $fileUploadErrorMessage = "Une extension PHP a arrêté l'envoi de fichier.";
+                $fileUploadErrorMessage = "<p class='msg'>Une extension PHP a arrêté l'envoi de fichier.</p>";
             break;
         }
 
-        array_push($erreur, "Erreur upload : " . $fileUploadErrorMessage);
+        array_push($erreur, "<p class='msg'>Erreur upload : </p>" . $fileUploadErrorMessage);
     }
 
 
     if (count($erreur) === 0) {
         $serverName = "localhost";
-        $userName = "root";
-        $database = "coffice";
-        $userPassword = "root";
+        $userName = "misa0198_cafe";
+        $database = "misa0198_wifi";
+        $userPassword = "DTU~T%G8M3k@";
 
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
@@ -102,11 +103,10 @@ else
             $requete->execute();
             $resultat = $requete->fetchAll(PDO::FETCH_OBJ);
             if(count($resultat) !== 0) {
-                echo "<p>Votre établissement est déjà enregistrée dans la base de données</p>";
+                echo "<p class='msg'>Votre établissement est déjà enregistrée dans la base de données</p>";
             }
 
             else {
-                var_dump($horaire_O);
                 $query = $conn->prepare("
                 INSERT INTO Etablissement(nom, adresse, description, horaire_O, horaire_F, Etablissement, Photo)
                 VALUES (:nomEtablissement, :adresse, :description, :ouverture, :fermeture, :etablissement, :Photo)
@@ -122,7 +122,7 @@ else
 
                 move_uploaded_file($fileTmpName, $path . $fileName);
                 
-                echo "<p>Insertions effectuées</p>";
+                echo "<p class='msg'>Insertions effectuées</p>";
             }
         } catch (PDOException $e) {
             die("Erreur :  " . $e->getMessage());
@@ -130,7 +130,7 @@ else
 
         $conn = null;
     } else {
-        $messageErreur = "<ul>";
+        $messageErreur = "<ul class='msg'>";
         $i = 0;
         do {
             $messageErreur .= "<li>" . $erreur[$i] . "</li>";
