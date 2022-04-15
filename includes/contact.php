@@ -66,11 +66,11 @@
             <img src="./assets/img/logo_google-maps.png" alt="logo google maps">
         </div>
     </div>
-<div class="footer_container">
-<div class="button-add">
-        <a href="index.php?page=ajoutEtablissement">
-        <img src="./assets/img/button-add.png" alt="bouton ajouter etablissement">
-        </a>
+    <div class="footer_container">
+        <div class="button-add">
+            <a href="index.php?page=ajoutEtablissement">
+                <img src="./assets/img/button-add.png" alt="bouton ajouter etablissement">
+            </a>
+        </div>
     </div>
-</div>
 </footer>

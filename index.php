@@ -1,3 +1,4 @@
+<link rel="shortcut icon" href="./assets/img/coffeee.png" type="image/x-icon"/>
 <?php
 require_once './functions/autoLoadFunction.php';
 session_start();
