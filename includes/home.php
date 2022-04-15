@@ -21,6 +21,7 @@
             <!-- <li><a href="index.php?page=login">Connexion</a></li> -->
             <li><a href="index.php?page=resultats">Etablissements</a></li>
             <li><a href="index.php?page=contact">Contact</a></li>
+
         </ul>
     </nav>
     </div>
@@ -70,6 +71,10 @@
             <input type="submit" style="width: 8rem; height: 30px; background-color: #d66b24; 
             border-radius: 30px; color:white; font-weight:600; text-align:center">
             </form>
+         </div>
+
+         <div class="add-place">
+         <a href="index.php?page=ajoutEtablissement" style="color:white">Ajouter un établissement</a>
          </div>
 
  </main>

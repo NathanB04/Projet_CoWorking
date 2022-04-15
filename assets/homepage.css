@@ -17,7 +17,7 @@ body
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
 }
 
 .icons img 
@@ -45,6 +45,18 @@ body
     text-align: center;
     font-weight: 900;
     width: 8rem;
+}
+
+.add-place 
+{
+    width: 100%;
+    color: rgb(245, 187, 78) ;
+    font-size: larger;
+    font-weight: 300;
+    position: absolute;
+    text-align: center;
+    text-shadow: rgb(17, 17, 17) 0.1em 0.1em 0.2em;
+    top: 80%;
 }
 
 
