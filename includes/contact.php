@@ -22,7 +22,7 @@
                 }
             ?>
                     <!-- <li><a href="index.php?page=login">Connexion</a></li> -->
-                    <li><a href="index.php?page=etablissement">Etablissement</a></li>
+                    <li><a href="index.php?page=ajoutEtablissement">Etablissement</a></li>
                     <li><a href="index.php?page=contact">Contact</a></li>
                 </ul>
             </nav>

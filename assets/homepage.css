@@ -120,7 +120,7 @@ body
 /************************* width <= 992 px *****************************/
 
 @media screen and (max-width : 992px) {
-    .homepage img 
+    .homepage img, .homepage
     {
         display: none;
     }
@@ -167,12 +167,16 @@ body
         margin-left: 12%;
         position: absolute;
     }
+
+    .icons {
+        bottom: 10%;
+    }
 }
 
 /************************* width <= 768 px *****************************/
 
 @media screen and (max-width : 768px) {
-    .homepage img 
+    .homepage img, .homepage
     {
         display: none;
     }
@@ -192,6 +196,10 @@ body
     .search-bar 
     {
         top: 40%;
+    }
+
+    .icons {
+        bottom: 10%;
     }
 }
 
@@ -256,5 +264,9 @@ body
     {
         
         width: 85%;
+    }
+    
+    .icons {
+        bottom: 10%;
     }
 }

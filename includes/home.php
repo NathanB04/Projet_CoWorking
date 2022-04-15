@@ -50,6 +50,9 @@
 
 <div class="container_home">
     <div class="homepage">
+    <div class="add-place">
+         <a href="index.php?page=ajoutEtablissement" style="color:white">Ajouter un établissement</a>
+         </div>
         <img src="assets/img/COVER_HOME.png">
     </div> 
     <div class="homepageMobile">
@@ -57,7 +60,7 @@
     </div>
     <div class="Logo_concept">
     <img src="./assets/img/coffice_concept.png">
-</div>
+    </div>
         <div class="search-bar">
 
              <form action="/action_page.php">
@@ -73,9 +76,6 @@
             </form>
          </div>
 
-         <div class="add-place">
-         <a href="index.php?page=ajoutEtablissement" style="color:white">Ajouter un établissement</a>
-         </div>
 
  </main>
 
