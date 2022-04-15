@@ -19,7 +19,7 @@ if (isset($_POST['envoi'])) {
         $userName = "misa0198_cafe";
         $database = "misa0198_wifi";
         $userPassword = "DTU~T%G8M3k@";
-
+        
         try {
             $conn = new PDO("mysql:host=$serverName;dbname=$database", $userName, $userPassword);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
